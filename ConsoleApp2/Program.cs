@@ -5,22 +5,10 @@
 string GetCoordinateRange(int numberArea)
 {
     string coordinateRange = "x, y.";
-    if (numberArea == 1)
-    {
-        coordinateRange = "x > 0, y > 0.";
-    }
-    if (numberArea == 2)
-    {
-        coordinateRange = "x < 0, y > 0.";
-    }
-    if (numberArea == 3)
-    {
-        coordinateRange = "x < 0, y < 0.";
-    }
-    if (numberArea == 4)
-    {
-        coordinateRange = "x > 0, y < 0.";
-    }
+    if (numberArea == 1) coordinateRange = "x > 0, y > 0.";
+    if (numberArea == 2) coordinateRange = "x < 0, y > 0.";
+    if (numberArea == 3) coordinateRange = "x < 0, y < 0.";
+    if (numberArea == 4) coordinateRange = "x > 0, y < 0.";
     return coordinateRange;
 }
 
