@@ -6,8 +6,26 @@ d = √ (х А – х В) 2 + (у А – у В) 2
 
 */
 
-int x1 = 0, y1 = 0;
-int x2 = 0, y2 = 0;
+double GetDistance(double x1 = 0, double y1 = 0, double x2 = 0, double y2 = 0)
+{
+    double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+    return distance;
+}
 
-double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+Console.WriteLine("Введите x1: ");
+double x1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Введите y1: ");
+double y1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Введите x2: ");
+double x2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Введите y2: ");
+double y2 = Convert.ToDouble(Console.ReadLine());
+
+double distance1 = GetDistance(x1, y1, x2, y2);
+Console.WriteLine(distance1);
+
+
 
